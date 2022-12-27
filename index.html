@@ -4,13 +4,147 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 
+	<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+	/>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+	/>
 
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+	<header id="header" class="header">
+		<div class="header_topLine">
+			<div class="container">
+				<div class="header_topLine--inner">
+					<div class="header_topLine--right">
+						<a class="header_topLine--addresses" href="#"><img src="./img/geo.svg" alt="">Адреса магазинов</a>
+						<a class="header_topLine--b2b" href="#">Для магазинов</a>
+					</div>
 
+					<div class="header_topLine--left">
+						<a class="header_topLine--terms" href="#">Оплата и доставка</a>
+						<a class="header_topLine--callMe btn" href="#">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header_middle">
+			<div class="container">
+				<div class="header_middle--inner">
+					<div class="header_middle--catalog">
+						<a class="header_middle--btn btn" href="#">
+							<div id="catalogBurger" class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							Каталог
+						</a>
+					</div>
+
+					<div class="header_middle--logo">
+						<div class="logo">
+							<a href="#">
+								<img src="./img/logo.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="header_middle--btns">
+						<div class="header_middle--btn search_btn">
+							<a href="#">
+								<img src="./img/search.svg" alt="">
+								Поиск
+							</a>
+						</div>
+
+						<div class="header_middle--btn call_btn">
+							<a href="#">
+								<img src="./img/call.svg" alt="">
+								Звонок
+							</a>
+						</div>
+
+						<div class="header_middle--btn login_btn">
+							<a href="#">
+								<img src="./img/login.svg" alt="">
+								Войти
+							</a>
+						</div>
+
+						<div class="header_middle--btn cart_btn">
+							<a href="#">
+								<img src="./img/cart.svg" alt="">
+								0,00 руб.
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header_nav">
+			<div class="container">
+				<nav class="header_nav--swiper swiper">
+					<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">Семена овощей</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена цветов</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Луковичные цветы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Лук-севок</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семенной картофель</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семенной картофель</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Саженцы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">Семена газонной травы</a>
+							</li>
+						</ul>
+
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>

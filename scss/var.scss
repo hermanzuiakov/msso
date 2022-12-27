@@ -3,8 +3,11 @@ $white: #fff;
 $gray: #919191;;
 $accent: #95B544;
 
-@mixin bold {
-  font-weight: 700;
+@mixin medium {
+  font-weight: 500;
+}
+@mixin light {
+  font-weight: 300;
 }
 @mixin accent {
   color: $accent;
@@ -14,4 +17,10 @@ $accent: #95B544;
 }
 @mixin white {
   color: $white;
+}
+
+@mixin btn {
+  font-family: 'Inter';
+  @include medium;
+  text-transform: uppercase;
 }
