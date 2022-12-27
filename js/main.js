@@ -17,3 +17,21 @@ let catalogBurger = document.getElementById("catalogBurger"),
 catalogBtn.onclick = function() {
     catalogBurger.classList.toggle("active");
 }
+
+let firstScreen = new Swiper(".first_screen--slider", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        autoplay: 20000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

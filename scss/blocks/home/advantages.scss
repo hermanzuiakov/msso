@@ -1,0 +1,44 @@
+.advantages {
+  color: $main;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 40px;
+    font-size: 40px;
+    @include regular;
+  }
+
+  &_inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .advantages_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+      }
+
+      .advantages_item--title {
+        margin: 0 0 10px;
+        font-weight: 400;
+        @include regular;
+      }
+
+      .advantages_item--subtitle {
+        margin: 0;
+        @include light;
+        color: $gray;
+        font-size: 16px;
+      }
+    }
+  }
+}

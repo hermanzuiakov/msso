@@ -1,0 +1,72 @@
+.catalog {
+  @include white;
+  margin-top: 32px;
+
+  &_inner {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &_card {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    height: 300px;
+    transition: .5s;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      @include white;
+    }
+
+    &:hover {
+      .catalog_card--link {
+        display: flex;
+        transform: translateY(0px);
+      }
+    }
+
+    .catalog_card--title {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      width: 100%;
+      height: 83px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      font-size: 28px;
+    }
+
+    .catalog_card--link {
+      position: absolute;
+      bottom: 0;
+      background: $accent;
+      width: 100%;
+      height: 83px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      font-size: 28px;
+      display: none;
+      transform: translateY(-83px);
+      transition: .5s;
+
+      a {
+        text-decoration: none;
+        @include white;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+}
