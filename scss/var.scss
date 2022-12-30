@@ -22,6 +22,9 @@ $accent: #95B544;
 @mixin white {
   color: $white;
 }
+@mixin workshop {
+  font-family: "WORKSHOP Marker";
+}
 
 @mixin btn {
   font-family: 'Inter';

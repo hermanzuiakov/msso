@@ -1,0 +1,87 @@
+.opt {
+  text-align: center;
+  background: url('../img/opt_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  @include white;
+
+  &_title {
+    @include regular;
+    font-size: 40px;
+    margin: 0 0 40px;
+  }
+
+  &_subtitle {
+    @include regular;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
+  .opt_steps {
+    display: flex;
+    gap: 180px;
+    margin-bottom: 45px;
+
+    .opt_step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      position: relative;
+
+      .opt_step--number {
+        display: flex;
+        border: 2px solid #FFFFFF;
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+
+      .opt_step--text {
+        font-size: 20px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: url("../img/arrow_opt.svg");
+        width: 103px;
+        position: absolute;
+        top: 50%;
+        left: 190px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .more {
+    @include workshop;
+    padding: 13px 40px;
+    font-size: 28px;
+    background: $accent;
+    width: fit-content;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      @include white;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+}

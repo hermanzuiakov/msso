@@ -1,0 +1,44 @@
+.about {
+  background: url("../img/about_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0 35px;
+  color: $white;
+
+  .title {
+    @include title;
+    @include regular;
+    margin: 0 0 35px;
+  }
+
+  .subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Inter";
+    margin: 0 0 35px;
+  }
+
+  &_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 100px;
+    margin-bottom: 35px;
+    iframe {
+      width: 100%;
+      height: 100%;
+      max-width: 337px;
+      max-height: 188px;
+    }
+  }
+
+  .about_social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
