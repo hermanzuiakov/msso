@@ -4,6 +4,9 @@ $main: #333333;
 $gray: #919191;;
 $accent: #95B544;
 
+@mixin bold {
+  font-weight: 700;
+}
 @mixin medium {
   font-weight: 500;
 }

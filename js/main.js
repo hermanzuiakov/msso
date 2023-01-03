@@ -35,3 +35,12 @@ let firstScreen = new Swiper(".first_screen--slider", {
         clickable: true,
     },
 });
+
+let partners = new Swiper(".partners_swiper", {
+    slidesPerView: 5,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next__partners",
+        prevEl: ".swiper-button-prev__partners",
+    },
+});
