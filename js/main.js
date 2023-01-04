@@ -1,24 +1,26 @@
 "use strict";
 
-let nav = new Swiper(".header_nav--swiper", {
-    slidesPerView: 5,
+const nav = new Swiper(".header_nav--swiper", {
+    slidesPerView: 7,
     spaceBetween: 18,
-    loop: true,
+    /*loop: true,*/
     /*freeMode: true,*/
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next__nav",
+        prevEl: ".swiper-button-prev__nav",
     },
 });
 
-let catalogBurger = document.getElementById("catalogBurger"),
-    catalogBtn = document.getElementsByClassName("header_middle--btn")[0];
+const catalogBurger = document.getElementById("catalogBurger"),
+    catalogBtn = document.getElementsByClassName("header_middle--btn")[0],
+    catalogMenu = document.getElementsByClassName("header_catalog--menu")[0];
 
 catalogBtn.onclick = function() {
     catalogBurger.classList.toggle("active");
+    catalogMenu.classList.toggle("active");
 }
 
-let firstScreen = new Swiper(".first_screen--slider", {
+const firstScreen = new Swiper(".first_screen--slider", {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -36,7 +38,7 @@ let firstScreen = new Swiper(".first_screen--slider", {
     },
 });
 
-let partners = new Swiper(".partners_swiper", {
+const partners = new Swiper(".partners_swiper", {
     slidesPerView: 5,
     loop: true,
     navigation: {
@@ -44,3 +46,17 @@ let partners = new Swiper(".partners_swiper", {
         prevEl: ".swiper-button-prev__partners",
     },
 });
+
+const menuItems = document.getElementsByClassName("menu_item--haveChild");
+
+for (const menuItem of menuItems) {
+    menuItem.addEventListener('click', (event) => {
+        for (const menuItem of menuItems) {
+            if (menuItem.classList.contains("active")) {
+                menuItem.classList.remove("active")
+            }
+        }
+
+        event.target.classList.toggle("active");
+    })
+}
