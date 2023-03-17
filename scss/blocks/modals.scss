@@ -1,0 +1,87 @@
+.auth_modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.24);
+  display: none;
+  opacity: 0;
+  transition: .3s;
+
+  &.opened {
+    display: block;
+    opacity: 1;
+  }
+
+  .auth_modal--wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    background: #FFFFFF;
+    padding: 70px 30px 30px;
+    max-width: 460px;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 36px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #4E4E53;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border: 1px solid #B8B6BF;
+        padding: 20px 30px;
+        font-size: 17px;
+        line-height: 22px;
+        color: #232326;
+        outline: none;
+
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+
+        &::placeholder {
+          color: #B8B6BF;
+        }
+      }
+
+      button {
+        background: #95B544;
+        border: 1px solid #B8B6BF;
+        margin-top: 36px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 18px 0;
+        margin-bottom: 15px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #B8B6BF;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+}

@@ -121,6 +121,21 @@
       gap: 24px;
 
       .header_middle--btn {
+        position: relative;
+        .cart_count {
+          position: absolute;
+          top: -3px;
+          right: 4px;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.35px;
+          color: #FFFFFF;
+          background: #F17E00;
+          border: 0.5px solid #FFFFFF;
+          padding: 1px 4px 1px 5px;
+          border-radius: 100%;
+        }
         a {
           display: flex;
           flex-direction: column;

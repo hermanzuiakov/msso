@@ -394,6 +394,23 @@ body {
           align-items: center;
   gap: 24px;
 }
+.header_middle--btns .header_middle--btn {
+  position: relative;
+}
+.header_middle--btns .header_middle--btn .cart_count {
+  position: absolute;
+  top: -3px;
+  right: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+  background: #F17E00;
+  border: 0.5px solid #FFFFFF;
+  padding: 1px 4px 1px 5px;
+  border-radius: 100%;
+}
 .header_middle--btns .header_middle--btn a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,6 +734,103 @@ body {
   padding: 30px 0;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.auth_modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.24);
+  display: none;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.auth_modal.opened {
+  display: block;
+  opacity: 1;
+}
+.auth_modal .auth_modal--wrapper {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: #FFFFFF;
+  padding: 70px 30px 30px;
+  max-width: 460px;
+}
+.auth_modal .auth_modal--wrapper h2 {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4E4E53;
+}
+.auth_modal .auth_modal--wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.auth_modal .auth_modal--wrapper form input {
+  border: 1px solid #B8B6BF;
+  padding: 20px 30px;
+  font-size: 17px;
+  line-height: 22px;
+  color: #232326;
+  outline: none;
+}
+.auth_modal .auth_modal--wrapper form input:nth-child(1) {
+  margin-bottom: 20px;
+}
+.auth_modal .auth_modal--wrapper form input::-webkit-input-placeholder {
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper form input::-moz-placeholder {
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper form input:-ms-input-placeholder {
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper form input::-ms-input-placeholder {
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper form input::placeholder {
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper form button {
+  background: #95B544;
+  border: 1px solid #B8B6BF;
+  margin-top: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 18px 0;
+  margin-bottom: 15px;
+}
+.auth_modal .auth_modal--wrapper form span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #B8B6BF;
+}
+.auth_modal .auth_modal--wrapper .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .first_screen {

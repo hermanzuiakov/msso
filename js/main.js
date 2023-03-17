@@ -60,3 +60,14 @@ for (const menuItem of menuItems) {
         event.target.classList.toggle("active");
     })
 }
+
+const authBtn= document.getElementById("auth_btn"),
+    authModal = document.getElementById("auth_modal"),
+    authClose = document.getElementById("close_auth");
+
+authBtn.onclick = function () {
+    authModal.classList.add("opened");
+}
+authClose.onclick = function () {
+    authModal.classList.remove("opened");
+}

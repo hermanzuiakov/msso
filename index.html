@@ -2347,7 +2347,7 @@
 							</a>
 						</div>
 
-						<div class="header_middle--btn login_btn">
+						<div id="auth_btn" class="header_middle--btn login_btn">
 							<a href="#">
 								<img src="./img/login.svg" alt="">
 								Войти
@@ -2356,6 +2356,7 @@
 
 						<div class="header_middle--btn cart_btn">
 							<a href="#">
+								<span class="cart_count">3</span>
 								<img src="./img/cart.svg" alt="">
 								0,00 руб.
 							</a>
@@ -2879,6 +2880,27 @@
 			</div>
 		</div>
 	</footer>
+	
+	<div id="auth_modal" class="auth_modal">
+		<div class="auth_modal--wrapper">
+			<div id="close_auth" class="close">
+				<img src="./img/close.svg" alt="">
+			</div>
+			<h2>
+				Вход в личный кабинет
+			</h2>
+			
+			<form action="">
+				<input type="text" placeholder="Логин">
+				<input type="password" placeholder="Пароль">
+				
+				<button>Войти</button>
+				<span>
+					Для регистрации на сайте, обратитесь в отдел оптовых продаж.
+				</span>
+			</form>
+		</div>
+	</div>
 
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/main.js"></script>
